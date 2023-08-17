@@ -2,6 +2,7 @@ import React from 'react';
 import Title from './Title';
 import planets from '../data/planets';
 import PlanetCard from './PlanetCard';
+import '../css/solarSystem.css';
 
 class SolarSystem extends React.Component {
   render() {
@@ -9,9 +10,13 @@ class SolarSystem extends React.Component {
       <PlanetCard key={ p.name } planetName={ p.name } planetImage={ p.image } />
     ));
     return (
-      <div data-testid="solar-system">
-        <Title headline="Planetas" />
-        { card }
+      <div data-testid="solar-system" className="solar-system">
+        <div className="form">
+          <Title headline="Planetas" />
+        </div>
+        <div className="form spacing">
+          { card }
+        </div>
       </div>
     );
   }
