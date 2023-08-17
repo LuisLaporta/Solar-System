@@ -1,0 +1,11 @@
+.header-content {
+  display: flex;
+  justify-content: center;
+}
+
+.header-title {
+  color: #fff;
+  margin-top: 3%;
+  font-size: 3vw;
+  border-bottom: 1px solid #fff;
+}
